@@ -20,3 +20,22 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
+#	OR
+
+#include <stdio.h>
+
+int main(void)
+{
+	char t;
+	
+	for (t = 'a'; t <= 'z'; t++)
+	{
+		if (t == 'e' || t == 'q')
+		       continue;
+
+	putchar(t);
+	}
+	putchar('\n');
+	return (0);
+}		

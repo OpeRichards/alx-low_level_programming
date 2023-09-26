@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <time.h>
 
 /**
  * main - Entry point
@@ -9,10 +8,13 @@
 
 int main(void)
 {
-	int b;
+	int f;
 
-	for (b = 0; b < 10; b++)
-		printf("%d", b);
+	for (f = 0; f <= 9; f++)
+	{
+		printf("%d", f);
+	}
 	putchar('\n');
+
 	return (0);
 }

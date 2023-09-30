@@ -21,7 +21,6 @@ void times_table(void)
 			else /*For other columns print comma and space and result*/
 			{
 				_putchar(',');
-				_putchar(' ');
 
 				if (result < 10) /*If result is single digit add two spaces before it*/
 				{

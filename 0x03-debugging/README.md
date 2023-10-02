@@ -48,7 +48,6 @@ Based on the <kbd>main.c</kbd> file above, create a file named <kbd>0-main.c</kb
 You are not coding the solution / function, you’re just testing it! However, you can adapt your function from <kbd>0x01. C - Variables, if, else, while - Task #0</kbd> to compile with this main file to test locally.
 
 	- You only need to upload <kbd>0-main.c</kbd> and <kbd>main.h</kbd> for this task. We will provide our own <kbd>positive_or_negative()</kbd> function.
-
 	- You are not allowed to add or remove lines of code, you may change only one line in this task.
 ```
 carrie@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main

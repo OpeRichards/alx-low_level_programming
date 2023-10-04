@@ -3,7 +3,7 @@
 
 /**
  * more_numbers - Prints digits 0 to 14 in 10 different times
- * 
+ *
  */
 void more_numbers(void)
 {

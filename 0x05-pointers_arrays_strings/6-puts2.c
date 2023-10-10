@@ -12,9 +12,11 @@ void puts2(char *str)
 
 	while (str[index] != '\0') /* Iterate through the string until end*/
 	{
-		_putchar(str[index]); /*Print the character at the current index */
-		index += 2; /* Increment the index by 2 to skip every other character */
+		index++;
+		if (index % 2 == 0)
+		{
+			_putchar(str[index]); /*Print the character at the current index */
+		}
 	}
-
 	_putchar('\n');
 }

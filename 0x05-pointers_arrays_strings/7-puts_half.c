@@ -32,6 +32,5 @@ void puts_half(char *str)
 		_putchar(str[length]); /*Print character at the current index */
 		length++; /* Move to the next character */
 	}
-
 	_putchar('\n');
 }

@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 
 		if (index == n - 1) /* Check if it's not the last element */
 			continue;
-		
+
 	printf(", "); /*Print a comma & space to separate elemnts*/
 	}
 

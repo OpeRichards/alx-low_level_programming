@@ -15,7 +15,6 @@ void puts_half(char *str)
 	{
 		length++; /* Increment the length for each character */
 	}
-
 	/* Calculate the starting index based on string length */
 	if (length % 2 == 0) /*If length is even */
 	{
@@ -27,6 +26,7 @@ void puts_half(char *str)
 	}
 
 	/* Use a loop to print characters from the calculated index to the end */
+	length = start_index;
 	while (str[start_index] != '\0')
 	{
 		_putchar(str[start_index]); /*Print character at the current index */

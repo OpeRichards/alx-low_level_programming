@@ -27,10 +27,10 @@ void puts_half(char *str)
 
 	/* Use a loop to print characters from the calculated index to the end */
 	length = start_index;
-	while (str[start_index] != '\0')
+	while (str[length] != '\0')
 	{
-		_putchar(str[start_index]); /*Print character at the current index */
-		start_index++; /* Move to the next character */
+		_putchar(str[length]); /*Print character at the current index */
+		length++; /* Move to the next character */
 	}
 
 	_putchar('\n');

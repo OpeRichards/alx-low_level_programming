@@ -16,15 +16,12 @@ void rev_string(char *s)
 		start_index++; /*increment length of each character*/
 	}
 
-	/* Adjust end_index to point to the last character*/
-	/* (before null terminator)*/
-
 	/* Swap characters at start_index and end_index */
 	for (end_index = 0; start_index > end_index; end_index++)
 	{
-		start_index--;
-		temp = s[start_index];
-		s[start_index] = s[end_index];
-		s[end_index] = temp;
+		start_index--; /* Move from the end of string to start*/
+		temp = s[start_index]; /*Stores character at start_index in temp*/
+		s[start_index] = s[end_index]; /*Swap characters*/
+		s[end_index] = temp; /* Assign character in temp to end_index*/
 	}
 }

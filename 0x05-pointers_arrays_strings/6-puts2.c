@@ -10,9 +10,8 @@ void puts2(char *str)
 {
 	int index = 0; /* Initialize an index to traverse the string */
 
-	while (str[index] != '\0') /* Iterate through the string until end*/
+	for (index = 0; str[index] != '\0'; index++) /* Iterate through the string until end*/
 	{
-		index++;
 		if (index % 2 == 0)
 		{
 			_putchar(str[index]); /*Print the character at the current index */

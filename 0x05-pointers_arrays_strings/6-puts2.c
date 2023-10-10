@@ -13,7 +13,7 @@ void puts2(char *str)
 	/* Iterate through the string until end */
 	for (index = 0; str[index] != '\0'; index++)
 	{
-		if (index % 2 == 0)
+		if (index % 2 == 0) /* Check if the index is even */
 		{
 			_putchar(str[index]); /*Print the character at the current index */
 		}

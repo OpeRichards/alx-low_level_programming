@@ -19,6 +19,6 @@ char *_strcpy(char *dest, char *src)
 
 	/*Add null-terminating character to dest*/
 	dest[index] = '\0';
-	
-	return dest;
+
+	return (dest);
 }

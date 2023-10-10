@@ -22,7 +22,7 @@ void puts_half(char *str)
 	}
 	else /* If the length is odd */
 	{
-		start_index = (length - 1) / 2; /*Start from last n characters*/
+		start_index = (length + 1) / 2; /*Start from last n characters*/
 	}
 
 	/* Use a loop to print characters from the calculated index to the end */

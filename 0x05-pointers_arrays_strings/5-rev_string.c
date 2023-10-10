@@ -7,17 +7,24 @@
  */
 void rev_string(char *s)
 {
-	int  i, lent = 0; /*initialise the length to 0*/
+	int  start_index = 0; /*initialise the length to 0*/
+	int end_index;
+	int temp;
 
-	while (s[lent] != '\0') /*Calculate length of string*/
+	while (s[start_index] != '\0') /*Calculate length of string*/
 	{
-		lent++; /*increment lent of each character*/
+		start_index++; /*increment length of each character*/
 	}
 
-	for (i = lent - 1; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
+	/* Adjust end_index to point to the last character*/
+	/* (before null terminator)*/
 
-	_putchar('\n');
+	/* Swap characters at start_index and end_index */
+	for (end_index = 0; start_index > end_index; end_index++)
+	{
+		start_index--;
+		temp = s[start_index];
+		s[start_index] = s[end_index];
+		s[end_index] = temp;
+	}
 }

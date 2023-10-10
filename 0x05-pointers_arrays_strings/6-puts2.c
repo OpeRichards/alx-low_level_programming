@@ -10,7 +10,8 @@ void puts2(char *str)
 {
 	int index = 0; /* Initialize an index to traverse the string */
 
-	for (index = 0; str[index] != '\0'; index++) /* Iterate through the string until end*/
+	/* Iterate through the string until end */
+	for (index = 0; str[index] != '\0'; index++)
 	{
 		if (index % 2 == 0)
 		{

@@ -4,18 +4,15 @@
 
 /**
  * malloc_checked - Allocates memory using malloc
- * @b: Assigned integer
+ * @b: Number of bytes to allocate
  * Return: Pointer to allocated memory, or NULL
  */
 void *malloc_checked(unsigned int b)
 {
-	void *f;
+	char *h = malloc(b);
 
-	f = malloc(b);
-	if (f == NULL)
-	{
+	if (h == NULL)
 		exit(98);
-	}
-
-	return (f);
+	else
+		return (h);
 }

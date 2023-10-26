@@ -16,7 +16,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t new_nodes = 0;
 
 	tmp = head;
-	while (tmp)
+	while (tmp != NULL)
 	{
 		printf("[%p] %d\n", (void *)tmp, tmp->n);
 		counter++;
